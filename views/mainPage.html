@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainPage.css">
+    <title>Quick Mailer</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100&display=swap");
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul {
+            display: flex;
+            float: right;
+        }
+
+        li {
+            margin-right: 27px;
+            margin-top: 22px;
+            margin-left: 22px;
+            list-style: none;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: bold;
+        }
+
+        li:hover {
+            cursor: pointer;
+            color: rgb(103 29 221 / 94%);
+        }
+
+        #logo {
+            width: 112px;
+            height: 62px;
+            margin-left: 24px;
+        }
+
+        #mainContent {
+            height: 633px;
+        }
+
+        #heading {
+            font-family: "Anton", sans-serif;
+            text-align: center;
+            font-size: 52px;
+        }
+
+        #showImage {
+            width: 550px;
+            height: 317px;
+            margin-left: 34px;
+            margin-top: 13px;
+        }
+
+        #formData {
+            width: 366px;
+            height: 425px;
+            float: right;
+            margin-right: 41px;
+            margin-top: 32px;
+        }
+
+        span {
+            margin-right: 12px;
+            font-family: "Dosis", sans-serif;
+            font-size: 23px;
+        }
+
+        input {
+            width: 190px;
+            height: 22px;
+            border-radius: 7px;
+            margin-bottom: 22px;
+        }
+
+        #userEmail {
+            margin-left: 32px;
+        }
+
+        #messageMail {
+            margin-left: -8px;
+        }
+
+        #submit {
+            width: 109px;
+            height: 32px;
+            border: 2px solid rgb(103 29 221 / 94%);
+            border-radius: 22px;
+            margin-left: 93px;
+            margin-top: 10px;
+            font-family: "Jost", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #submit:hover {
+            cursor: pointer;
+            background-color: rgb(103 29 221 / 94%);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>Blogs</li>
+        </ul>
+        <img src="https://cdn4.iconfinder.com/data/icons/email-2/128/Email_express_mail-512.png" alt="Logo" id="logo">
+    </nav>
+    <div id="mainContent">
+        <h1 id="heading">QUICK MAIL 🚀</h1>
+        <img src="https://kit8.net/wp-content/uploads/edd/2022/10/Idea_waterfall_model_concept_similar_1_preview.jpg"
+            alt="showImage" id="showImage">
+        <div id="formData">
+            <form action="">
+                <span id="userEmail">Your Email</span>
+                <input type="email" name="userEmail" placeholder="Enter Your Email">
+                <span>Subject of mail</span>
+                <input type="text" name="mailSubject" placeholder="Enter Subject of mail">
+                <span id="messageMail">Message of mail</span>
+                <input type="text" name="messageMai" placeholder="Enter Message of mail">
+                <button id="submit">Send Mail</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
