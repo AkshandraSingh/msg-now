@@ -58,7 +58,7 @@ Before we begin, make sure you have the following tools installed:
    ```
 
 2. **Access the Application:**
-   Open your web browser and go to `http://localhost:3000`.
+   Open your web browser and go to `http://localhost:7000`.
 
 3. **Send Your Email:**
    - Fill out the email form with the recipient's email address, subject, message, and your email address for the "From" field.
