@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainPage.css">
     <title>Quick Mailer</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
@@ -81,11 +80,15 @@
         }
 
         #userEmail {
-            margin-left: 32px;
+            margin-left: 2px;
         }
 
         #messageMail {
             margin-left: -8px;
+        }
+
+        #to {
+            margin-left: 22px;
         }
 
         #submit {
@@ -123,13 +126,17 @@
         <img src="https://kit8.net/wp-content/uploads/edd/2022/10/Idea_waterfall_model_concept_similar_1_preview.jpg"
             alt="showImage" id="showImage">
         <div id="formData">
-            <form action="">
+            <form action="/sendMail" method="post">
                 <span id="userEmail">Your Email</span>
                 <input type="email" name="userEmail" placeholder="Enter Your Email">
+                <br>
+                <span id="to">To</span>
+                <input type="email" name="toMail" placeholder="To">
+                <br>
                 <span>Subject of mail</span>
                 <input type="text" name="mailSubject" placeholder="Enter Subject of mail">
                 <span id="messageMail">Message of mail</span>
-                <input type="text" name="messageMai" placeholder="Enter Message of mail">
+                <input type="text" name="messageMail" placeholder="Enter Message of mail">
                 <button id="submit">Send Mail</button>
             </form>
         </div>
